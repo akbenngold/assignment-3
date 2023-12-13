@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="flex">
+      <img src="logo.svg" alt="" />
+      <div class="nav">
+        <ul class="flex">
+          <li><a href="">Download</a></li>
+          <li><a href="">Learn more</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">Account</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <hr />
+
+    <main class="flex">
+      <div class="card flex">
+        <!-- checkout -->
+        <div class="checkout">
+          <h1>Checkout</h1>
+          <!-- basic -->
+          <div class="checkout__basic">
+            <h2><span class="circle">1</span>Your Basic Information</h2>
+            <label for="firstname">First Name</label>
+            <input
+              type="text"
+              id="first name"
+              name="firstname"
+              required
+              placeholder="Jane"
+            />
+
+            <label for="firstname">Last Name</label>
+            <input
+              type="text"
+              id="first name"
+              name="firstname"
+              required
+              placeholder="Doe"
+            />
+
+            <label for="firstname">E-mail</label>
+            <input
+              type="text"
+              id="first name"
+              name="firstname"
+              required
+              placeholder="janedoe@example.com"
+            />
+          </div>
+          <!-- payment -->
+          <div class="checkout__payment">
+            <h2><span class="circle">2</span>Your Payment Information</h2>
+            <label for="creditcard">Credit Card</label>
+            <div class="flex">
+              <input
+                type="number"
+                name="creditcard"
+                id="creditcard"
+                placeholder="Card Number"
+              />
+              <input type="number" placeholder="MM/YY" />
+              <input type="number" placeholder="CVV" />
+            </div>
+          </div>
+
+          <!-- call to action -->
+          <div class="check__action">
+            <button>Buy WP Pusher</button>
+            <p>
+              <span class="circle">?</span> Need any help? Don't hesitate to
+              contact support!
+            </p>
+          </div>
+
+          <img src="stripe.svg" alt="" />
+        </div>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+          <h4>Freelancer</h4>
+          <div class="price">$97/year</div>
+          <div class="description">Automatically renews after 1 year</div>
+
+          <ul>
+            <li>Use on 5 client sites</li>
+            <li>Private repositories</li>
+            <li>Email Support</li>
+          </ul>
+
+          Need 20 client sites?
+          <a href="">Switch to the Agency plan</a>
+
+          <hr />
+
+          <p>
+            FTP is horrible to deal with. <br />
+            WP Pusher solves that issue, and the customer support is awesome!
+          </p>
+
+          Kirk Beard
+        </div>
+      </div>
+
+      <div class="copyright">© 2018 WP Pusher IVS · Terms of Service</div>
+    </main>
+  </body>
+</html>
