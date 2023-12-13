@@ -19,13 +19,19 @@
 .circle {
   border: 2px solid #548bc5;
   color: #548bc5;
+  font-size: 0.8em;
   border-radius: 50%;
   height: 1.5em;
   width: 1.5em;
+  margin: auto;
   text-align: center;
   display: inline-block;
 }
-
+.rule {
+  height: 2px;
+  width: 100%;
+  background-color: #5e758d2f;
+}
 /* components */
 body {
   font-family: Arial, sans-serif;
@@ -36,6 +42,7 @@ body {
 /* header */
 header {
   border-bottom: 2px solid #e0e6ea;
+  padding-bottom: 1rem;
 }
 .nav > ul {
   gap: 1rem;
@@ -43,6 +50,12 @@ header {
 }
 .nav a {
   text-decoration: none;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.009px;
+  text-align: center;
 }
 
 /* main */
@@ -52,17 +65,206 @@ main {
 }
 .card {
   width: 60%;
+  margin-top: 3rem;
+
+  width: 1000px;
 }
 /* checkout */
 .checkout {
   background-color: #ffffff;
   border-radius: 6px 0 0 6px;
+  padding: 1rem;
+  width: 600px;
+}
+#firstname,
+#lastname {
+  width: 275px;
+}
+h1 {
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.section {
+  display: flex;
+  gap: 1rem;
+}
+h2 {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.15px;
+  text-align: left;
 }
 label {
   display: block;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
+input {
+  background: #edeff2;
+  height: 36px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+#email {
+  width: 70%;
+}
+#creditcard {
+  border-radius: 6px 0 0 6px;
+}
+#cvv,
+#expiry {
+  width: 35%;
+  border-radius: 0;
+  padding: 0;
+}
+
+#expiry {
+  border-radius: 0 6px 6px 0;
+}
+
+button {
+  height: 50px;
+  background-color: #038e7d;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 5px 15px 0px #0000000d;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.39px;
+  text-align: center;
+  color: #ffffff;
+
+  margin-top: 1rem;
+}
+
+p {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.00999px;
+  text-align: left;
+  width: 60%;
+}
+
+.check__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /* side bar */
 .sidebar {
+  padding-top: 1rem;
+  padding-left: 2rem;
   background-color: #1179bf;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  position: relative;
+}
+.sidebar a {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.007999998517334461px;
+  text-align: left;
+}
+.sidebar li {
+  list-style: none;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar li::before {
+  content: url(listicon.svg) "      ";
+  width: 3px;
+  height: 5px;
+  position: absolute;
+  left: 2rem;
+}
+
+h4 {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.0099px;
+  text-align: left;
+}
+
+.price {
+  font-family: "Lato";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: -0.0149px;
+  text-align: left;
+  padding-left: 1rem;
+  position: relative;
+}
+.price::before {
+  content: "$";
+  position: absolute;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.0149px;
+  text-align: left;
+  left: 0rem;
+  top: 1rem;
+}
+.price::after {
+  content: "/ year";
+  position: absolute;
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.0149px;
+  text-align: left;
+  left: rem;
+  top: 2.5rem;
+}
+
+.description {
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.00799px;
+  text-align: left;
+}
+.kirk__img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.kirk {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
 }

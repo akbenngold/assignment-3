@@ -27,36 +27,43 @@
         <!-- checkout -->
         <div class="checkout">
           <h1>Checkout</h1>
+          <div class="rule"></div>
           <!-- basic -->
           <div class="checkout__basic">
             <h2><span class="circle">1</span>Your Basic Information</h2>
-            <label for="firstname">First Name</label>
-            <input
-              type="text"
-              id="first name"
-              name="firstname"
-              required
-              placeholder="Jane"
-            />
+            <div class="section">
+              <div>
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  required
+                  placeholder="Jane"
+                />
+              </div>
+              <div>
+                <label for="lastname" id="lastname">Last Name</label>
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  required
+                  placeholder="Doe"
+                />
+              </div>
+            </div>
 
-            <label for="firstname">Last Name</label>
+            <label for="email">E-mail</label>
             <input
               type="text"
-              id="first name"
-              name="firstname"
-              required
-              placeholder="Doe"
-            />
-
-            <label for="firstname">E-mail</label>
-            <input
-              type="text"
-              id="first name"
-              name="firstname"
+              id="email"
+              name="email"
               required
               placeholder="janedoe@example.com"
             />
           </div>
+          <div class="rule"></div>
           <!-- payment -->
           <div class="checkout__payment">
             <h2><span class="circle">2</span>Your Payment Information</h2>
@@ -68,11 +75,11 @@
                 id="creditcard"
                 placeholder="Card Number"
               />
-              <input type="number" placeholder="MM/YY" />
-              <input type="number" placeholder="CVV" />
+              <input type="number" id="cvv" placeholder="MM/YY" />
+              <input type="number" id="expiry" placeholder="CVV" />
             </div>
           </div>
-
+          <div class="rule"></div>
           <!-- call to action -->
           <div class="check__action">
             <button>Buy WP Pusher</button>
@@ -80,15 +87,14 @@
               <span class="circle">?</span> Need any help? Don't hesitate to
               contact support!
             </p>
+            <img src="stripe.svg" alt="" />
           </div>
-
-          <img src="stripe.svg" alt="" />
         </div>
 
         <!-- sidebar -->
         <div class="sidebar">
           <h4>Freelancer</h4>
-          <div class="price">$97/year</div>
+          <div class="price">97</div>
           <div class="description">Automatically renews after 1 year</div>
 
           <ul>
@@ -102,12 +108,24 @@
 
           <hr />
 
-          <p>
+          <p
+            style="
+              font-family: Lato;
+              font-size: 18px;
+              font-style: italic;
+              font-weight: 700;
+              line-height: 24px;
+              letter-spacing: -0.008999999612569809px;
+              text-align: left;
+            "
+          >
             FTP is horrible to deal with. <br />
             WP Pusher solves that issue, and the customer support is awesome!
           </p>
 
-          Kirk Beard
+          <div class="kirk">
+            <img src="kirk.svg" alt="" class="kirk__img" />Kirk Beard
+          </div>
         </div>
       </div>
 
